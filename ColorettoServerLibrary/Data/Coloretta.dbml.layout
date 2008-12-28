@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 9.25" name="Coloretta">
+  <DataContextMoniker Name="/ColorettaDataContext" />
+  <nestedChildShapes>
+    <classShape Id="c0afc902-8e39-4c1c-b5ba-50250205734a" absoluteBounds="3.5, 6.875, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/ColorettaDataContext/AccessLog" />
+      <nestedChildShapes>
+        <elementListCompartment Id="a89eba30-3b29-448b-967e-6e4bc0056dbd" absoluteBounds="3.515, 7.335, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="fc796ca0-3967-4234-8fb7-609b1bf3b569" absoluteBounds="0.75, 3.375, 2, 2.3478011067708331">
+      <DataClassMoniker Name="/ColorettaDataContext/User" />
+      <nestedChildShapes>
+        <elementListCompartment Id="3bdabc5f-09ec-412a-b275-542d695121ea" absoluteBounds="0.765, 3.835, 1.9700000000000002, 1.7878011067708335" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="3d82f7ad-7c68-4582-b91a-0f96bc088ffd" absoluteBounds="6.25, 4.125, 2, 1.3862939453125005">
+      <DataClassMoniker Name="/ColorettaDataContext/GamePlayer" />
+      <nestedChildShapes>
+        <elementListCompartment Id="da89ca30-dd92-4cb4-9720-55344f67e848" absoluteBounds="6.265, 4.585, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="33b50d69-15d9-4244-80e8-095242b0de24" absoluteBounds="3.5, 4.375, 2, 1.7708968098958327">
+      <DataClassMoniker Name="/ColorettaDataContext/Game" />
+      <nestedChildShapes>
+        <elementListCompartment Id="2fb6749a-dd47-4dcd-9a74-3cc369052739" absoluteBounds="3.515, 4.835, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="2a98f5af-ef7c-4b45-983e-90d3057c0a80" absoluteBounds="0.75, 0.75, 2, 1.3862939453125">
+      <DataClassMoniker Name="/ColorettaDataContext/Setting" />
+      <nestedChildShapes>
+        <elementListCompartment Id="022a0960-92aa-481d-8a3d-9daf7e962f53" absoluteBounds="0.765, 1.21, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(1.75 : 5.72280110677083); (1.75 : 7.95274983723958); (3.5 : 7.95274983723958)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/ColorettaDataContext/User/User_AccessLog" />
+      <nodes>
+        <classShapeMoniker Id="fc796ca0-3967-4234-8fb7-609b1bf3b569" />
+        <classShapeMoniker Id="c0afc902-8e39-4c1c-b5ba-50250205734a" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 4.21875); (6.25 : 4.21875)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/ColorettaDataContext/User/User_GamePlayer" />
+      <nodes>
+        <classShapeMoniker Id="fc796ca0-3967-4234-8fb7-609b1bf3b569" />
+        <classShapeMoniker Id="3d82f7ad-7c68-4582-b91a-0f96bc088ffd" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 4.94314697265625); (6.25 : 4.94314697265625)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/ColorettaDataContext/Game/Game_GamePlayer" />
+      <nodes>
+        <classShapeMoniker Id="33b50d69-15d9-4244-80e8-095242b0de24" />
+        <classShapeMoniker Id="3d82f7ad-7c68-4582-b91a-0f96bc088ffd" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 5.04890055338542); (3.5 : 5.04890055338542)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/ColorettaDataContext/User/User_Game" />
+      <nodes>
+        <classShapeMoniker Id="fc796ca0-3967-4234-8fb7-609b1bf3b569" />
+        <classShapeMoniker Id="33b50d69-15d9-4244-80e8-095242b0de24" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

@@ -1,0 +1,12 @@
+﻿Welcome {1},
+
+You (or someone dropping you a hint) has created an account on your behalf at http://www.schermerhorn.me/coloretta. 
+
+Below is the username selected and the password that was created for it. When you login for the first time you will be prompted to change the password.
+
+---------------------------------
+username: {0}
+password: {2}
+---------------------------------
+
+Enjoy!

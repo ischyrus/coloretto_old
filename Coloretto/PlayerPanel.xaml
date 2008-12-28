@@ -1,0 +1,15 @@
+﻿<UserControl x:Class="Coloretto.PlayerPanel" x:Name="ThisControl"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:Coloretto="clr-namespace:Coloretto">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="30" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="25" />
+        </Grid.RowDefinitions>
+        <!--<Rectangle Fill="{Binding ElementName=ThisControl, Path=PlayerProfile.Color}" Grid.RowSpan="3" Grid.Column="0" Margin="2" Opacity="0.5" />-->
+        <Coloretto:PlayerHand x:Name="playerHand" Margin="5 0 5 0" Grid.Row="1" />
+        <Coloretto:PlayerOverlay x:Name="PlayerOverlay" PlayerName="TestPlayer" PlayerColor="Green" Grid.RowSpan="3" Grid.Row="0" />
+    </Grid>
+</UserControl>

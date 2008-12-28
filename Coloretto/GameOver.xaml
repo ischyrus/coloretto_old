@@ -1,0 +1,41 @@
+﻿<UserControl
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    x:Class="Coloretto.GameOver"
+    Margin="20" xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+    xmlns:Microsoft_Windows_Themes="clr-namespace:Microsoft.Windows.Themes;assembly=PresentationFramework.Aero">
+	<Border BorderBrush="Black" BorderThickness="1" Background="#E0208E2E" Margin="10,10,10,10" CornerRadius="15,15,15,15" Padding="15,15,15,15">
+        <Grid Height="249.553" Width="398.477">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto" />
+                <RowDefinition Height="auto" />
+                <RowDefinition Height="auto" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            <TextBlock Foreground="Black" FontSize="35" Grid.Row="0" HorizontalAlignment="Center"><Run Text="Game Over"/></TextBlock>
+            <Grid Grid.Row="1">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="199" />
+                    <ColumnDefinition Width="199" />
+                </Grid.ColumnDefinitions>
+                <TextBlock Foreground="Black" FontSize="25" FontWeight="Bold" Text="Player" Grid.Column="0" HorizontalAlignment="Center" />
+                <TextBlock Foreground="Black" FontSize="25" FontWeight="Bold" Text="Score" Grid.Column="1" HorizontalAlignment="Center" />
+            </Grid>
+            <Rectangle Height="1" Grid.Row="2" Fill="White" SnapsToDevicePixels="True" Margin="0 2 0 2" />
+            <ListView x:Name="ScoresListView" Grid.Row="3" Background="Transparent" HorizontalAlignment="Center" HorizontalContentAlignment="Left" BorderThickness="0" ScrollViewer.HorizontalScrollBarVisibility="Disabled">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="199" />
+                                <ColumnDefinition Width="199" />
+                            </Grid.ColumnDefinitions>
+                            <TextBlock Foreground="Black" FontSize="20" Text="{Binding PlayerName}" Grid.Column="0" HorizontalAlignment="Center" />
+                            <TextBlock Foreground="Black" FontSize="20" Text="{Binding Score}" Grid.Column="1" HorizontalAlignment="Center" />
+                        </Grid>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </Grid>
+    </Border>
+</UserControl>

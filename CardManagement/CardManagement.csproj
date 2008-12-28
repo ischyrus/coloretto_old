@@ -1,0 +1,53 @@
+﻿<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{E4CBCCAD-48EA-4916-9B6C-5CA9DE946E56}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <OutputType>Library</OutputType>
+    <RootNamespace>CardManagement</RootNamespace>
+    <AssemblyName>CardManagement</AssemblyName>
+    <TargetFrameworkVersion>v3.0</TargetFrameworkVersion>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>Full</DebugType>
+    <Optimize>False</Optimize>
+    <CheckForOverflowUnderflow>True</CheckForOverflowUnderflow>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>False</DebugSymbols>
+    <DebugType>None</DebugType>
+    <Optimize>True</Optimize>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+    <DefineConstants>TRACE</DefineConstants>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.Targets" />
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="Card.cs" />
+    <Compile Include="Coloretto\CardCollection.cs" />
+    <Compile Include="Coloretto\ColorettoCard.cs" />
+    <Compile Include="Coloretto\ColorettoDeckProvider.cs" />
+    <Compile Include="Coloretto\Constants.cs" />
+    <Compile Include="Coloretto\Enumerations.cs" />
+    <Compile Include="Deck.cs" />
+    <Compile Include="DeckProvider.cs" />
+    <Compile Include="IPlayer.cs" />
+    <Compile Include="Standard\Constants.cs" />
+    <Compile Include="Standard\Enumerations.cs" />
+    <Compile Include="Standard\StandardCard.cs" />
+    <Compile Include="Standard\StandardDeckProvider.cs" />
+  </ItemGroup>
+</Project>

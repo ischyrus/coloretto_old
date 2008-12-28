@@ -1,0 +1,231 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<title>Coloretta - Rules</title>
+<link href="../Style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+	<div id="wrapper">
+		
+		<div id="header">
+		
+		
+			<ul id="nav">
+				<li><a href="../" >Home</a></li>
+				<li><a href="../download/" title="Download">Download</a></li>
+				<li class="current_page_item"><a href="./" title="Rules">Rules</a></li>
+				<li><a href="../about/" title="About">About</a></li>
+			</ul>
+			<h1>It&#39;s all about cards, colors, and chance.</h1>
+		</div>
+		
+		<div class="content">
+			<div id="content"><br />
+				<p>
+					As with most games, the goal of Coloretta is to get the most 
+					points. Points are obtained by collecting as many cards of 
+					the same color as possible however too much variety in 
+					colors will cost you points. (I&#39;ll explain more about it 
+					in scoring)</p><p id="RoundSetup"><strong>Round Setup</strong>
+				</p>
+				<div class="subparagraph">
+					Each round starts with each player 
+					getting a different color dealt to them. In addition, if 
+					there are three players there will be three game stacks setup, four stacks for 4 players, etc.&nbsp; 
+				</div>
+				<div class="subparagraph">
+					The deck is randomized and the &quot;Last 
+					Cycle&quot; card is placed 15 cards from the 
+					bottom. The deck consists of 63 color cards (7 different 
+					colors and 9 cards of each), 10 &#39;+2&#39; cards, and 3 wilds. <br />
+					<br />
+					<em>NOTE: A 3 player game uses 6 colors rather than 7.</em></div>
+				<div id="GamePlay" style="font-weight:bold;margin-top:10px;">Game Play</div>
+				<div class="subparagraph">
+					The first player is determined randomly. A player has two 
+					options on their turn. Either drawing from the deck and 
+					placing the card on a game stack <strong>*or*</strong> picking a game stack.
+				</div>
+				<div class="subparagraph">
+					<span id="Drawing"><em><strong>Draw from the deck and placing a card</strong></em></span>
+					<div class="subparagraph">
+						A player must draw from the deck if all of the game 
+						stacks are empty.
+					</div>
+					<div class="subparagraph">
+						A player may not place 
+						the card on a stack that a player has picked up. 
+						(Once everyone has picked up a stack then the cycle 
+						is complete and all stacks are &#39;empty&#39; again.)
+					</div>
+					<div class="subparagraph">A game stack is full once it has 3 
+						cards in it. A card cannot be placed on a full stack.</div>
+					<div class="subparagraph">
+						A player cannot draw from the deck if all un-picked game 
+						stacks are full. 					</div>
+					<div style="margin-top: 10px">
+						<span id="Picking"><em><strong>Pick a game stack</strong></em></span>
+						<div class="subparagraph">
+							Instead of drawing a card the player may choose to 
+							pick one of the game stacks. Picking a game stack 
+							places the cards in the selected stack into the 
+							player&#39;s hand.</div>
+							<div class="subparagraph">A player cannot pick an 
+								empty stack. </div>
+							<div class="subparagraph">After picking a stack the 
+								player does not get another turn until all 
+								players have picked a stack. After all players 
+								have selected a stack a new &#39;cycle&#39; starts.</div>
+						<div class="subparagraph">Once a stack has been picked 
+							it is deactivated until the next cycle.&nbsp;In each 
+							&#39;cycle&#39; each stack will be selected by different 
+							players which is why there are as many stacks as 
+							there are players. </div>
+					</div>
+				</div>
+
+				<div style="margin-top:10px;" id="Scoring"><strong>Scoring</strong></div>
+				<div class="subparagraph">Scoring is not final until the round 
+					is over. The round is over when the cycle in which the &quot;Last Cycle&quot; card is 
+					drawn is finished. At this time the player&#39;s hand score is 
+					added to the player&#39;s previous round scores. The player&#39;s hand is cleared 
+					and another round is setup. There are 4 rounds in a game by 
+					default.</div>
+				<div class="subparagraph">Scoring is based on Fibonacci numbers 
+					and how many cards of in set you have. (Cards are grouped 
+					into a sets based on color.)&nbsp; The <strong>three</strong> 
+					largest sets are added up and 
+					any remaining sets are a subtracted as a penalty. It is to your 
+					advantage to select game stacks that will make your hand 
+					contain no more than three different colors although you&#39;ll 
+					probably always have more than three colors. <em>NOTE: As 
+					you can see in the scoring chart below. Getting more than 6 
+					cards in a set does not give you more points.</em></div>
+					<div class="subparagraph">If the player has any wild cards then 
+						they are grouped in color sets that will 
+						give the player the most points.&nbsp; A wild card will 
+						never be grouped with a color set that would subtract 
+						points.</div>
+						<div class="subparagraph">+2 cards add 2 points to the 
+							player&#39;s hand.</div>
+							<div class="subparagraph">Although the player would 
+								have to have horrible luck, it is possible to get a negative score.</div>
+							<div class="subparagraph" style="text-align:center;">
+								<table id="ScoreTable" cellpadding="0px" cellspacing="0px" class="outlined" style="width: 134px; border: 1px black solid">
+									<tr>
+										<td># in Set</td>
+										<td>Score</td>
+									</tr>
+									<tr>
+										<td>1</td>
+										<td>1</td>
+									</tr>
+									<tr>
+										<td>2</td>
+										<td>3</td>
+									</tr>
+									<tr>
+										<td>3</td>
+										<td>6</td>
+									</tr>
+									<tr>
+										<td>4</td>
+										<td>10</td>
+									</tr>
+									<tr>
+										<td>5</td>
+										<td>15</td>
+									</tr>
+									<tr>
+										<td>6+</td>
+										<td>21</td>
+									</tr>
+								</table>
+					</div>
+				<div id="Keyboard" style="margin-top:10px;">
+					<strong>Keyboard Shortcuts</strong></div>
+					<div class="subparagraph">Once a game is started you will 
+						not need to use a mouse until the game is over. Below is 
+						a table that maps game play commands to keyboard 
+						characters.<br />
+&nbsp;<div align="center">
+							<table cellpadding="0px" cellspacing="0px" class="outlined">
+								<tr>
+									<td style="width: 95px">Keyboard Key</td>
+									<td>Action</td>
+								</tr>
+								<tr>
+									<td style="width: 95px">d</td>
+									<td align="left">Draw from the deck</td>
+								</tr>
+								<tr>
+									<td style="width: 95px">1</td>
+									<td>Place drawn card on game stack 1.<br />
+									OR<br />
+									Place game stack 1 in your hand if you have 
+									not drawn a card yet.</td>
+								</tr>
+								<tr>
+									<td style="width: 95px">2</td>
+									<td>Place drawn card on game stack 2.<br />
+									OR<br />
+									Place game stack 2 in your hand if you have 
+									not drawn a card yet.</td>
+								</tr>
+								<tr>
+									<td style="width: 95px">3</td>
+									<td>Place drawn card on game stack 3.<br />
+									OR<br />
+									Place game stack 3 in your hand if you have 
+									not drawn a card yet.</td>
+								</tr>
+								<tr>
+									<td style="width: 95px">4</td>
+									<td>Place drawn card on game stack 4.<br />
+									OR<br />
+									Place game stack 4 in your hand if you have 
+									not drawn a card yet.</td>
+								</tr>
+								<tr>
+									<td style="width: 95px">5</td>
+									<td>Place drawn card on game stack 5.<br />
+									OR<br />
+									Place game stack 5 in your hand if you have 
+									not drawn a card yet.</td>
+								</tr>
+							</table>
+						</div>
+					</div>
+			</div>
+		</div>
+		
+		<div id="sidebar">
+			<div id="title">Summary</div>
+			<div id="titledcontent"><a href="#RoundSetup">Round Setup</a><br />
+				<a href="#GamePlay">Game Play</a><br />
+				- <a href="#Drawing">Drawing from the deck</a><br />
+				- <a href="#Picking">Picking a game stack</a><br />
+				<a href="#Scoring">Scoring</a><br />
+				- <a href="#ScoreTable">Score table</a><br />
+				<a href="#Keyboard">Keyboard Shortcuts</a></div>
+
+			<div id="title">Links</div>
+			<div id="titledcontent"><a href="../download/" title="Download Coloretta">Download</a><br />
+			<a href="../users/signup.aspx" title="Create an account">Create an account</a><br />
+				Forums<br />
+				<a href="../donate/">Donate via PayPal</a></div>
+
+		</div>
+		
+		<div id="footer">
+			Coloretta does not cost anything. C<span class="content">oloretta
+			</span>is in not endorsed by or affiliated with Coloretto. If you don&#39;t already own it, it is definitely worth 
+			<a href="http://www.funagain.com/control/product/~product_id=014604" style="color: black; text-decoration: underline;">picking up a copy</a>.
+		</div>
+	</div>
+</body>
+
+</html>

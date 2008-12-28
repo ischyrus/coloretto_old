@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Database Name="Coloretta" EntityNamespace="Coloretto.Services.Data" ContextNamespace="Coloretto.Services.Data" Class="ColorettaDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=(local);Initial Catalog=Coloretta;Persist Security Info=True;User ID=sa" SettingsObjectName="Coloretto.Services.Properties.Settings" SettingsPropertyName="ColorettaConnectionString1" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.AccessLog" Member="AccessLogs">
+    <Type Name="AccessLog">
+      <Column Name="Username" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="LoginTime" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="Success" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="Origination" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Duration" Type="System.DateTimeOffset" DbType="DateTimeOffset" CanBeNull="true" />
+      <Column Name="AccessPoint" Type="System.String" DbType="VarChar(25) NOT NULL" CanBeNull="false" />
+      <Column Name="AccessLogId" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Association Name="User_AccessLog" Member="User" ThisKey="Username" OtherKey="Username" Type="User" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Users" Member="Users">
+    <Type Name="User">
+      <Column Name="DisplayName" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Username" Type="System.String" DbType="VarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Password" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Created" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="Email" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="Newsletter" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="RV" Type="System.Data.Linq.Binary" DbType="rowversion NOT NULL" CanBeNull="false" IsVersion="true" />
+      <Column Name="Deleted" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Association Name="User_AccessLog" Member="AccessLogs" ThisKey="Username" OtherKey="Username" Type="AccessLog" />
+      <Association Name="User_GamePlayer" Member="GamePlayers" ThisKey="Username" OtherKey="Username" Type="GamePlayer" />
+      <Association Name="User_Game" Member="Games" ThisKey="Username" OtherKey="owner" Type="Game" />
+    </Type>
+  </Table>
+  <Table Name="dbo.GamePlayers" Member="GamePlayers">
+    <Type Name="GamePlayer">
+      <Column Name="GameId" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Username" Type="System.String" DbType="VarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="[Order]" Member="Order" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Association Name="User_GamePlayer" Member="User" ThisKey="Username" OtherKey="Username" Type="User" IsForeignKey="true" />
+      <Association Name="Game_GamePlayer" Member="Game" ThisKey="GameId" OtherKey="GameId" Type="Game" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Games" Member="Games">
+    <Type Name="Game">
+      <Column Name="GameId" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Status" Type="System.String" DbType="NChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="Start" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="Finish" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="owner" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Association Name="Game_GamePlayer" Member="GamePlayers" ThisKey="GameId" OtherKey="GameId" Type="GamePlayer" />
+      <Association Name="User_Game" Member="User" ThisKey="owner" OtherKey="Username" Type="User" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Settings" Member="Settings">
+    <Type Name="Setting">
+      <Column Name="Name" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Value" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Context" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+    </Type>
+  </Table>
+</Database>

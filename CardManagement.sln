@@ -1,0 +1,47 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CardManagement", "CardManagement\CardManagement.csproj", "{E4CBCCAD-48EA-4916-9B6C-5CA9DE946E56}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CardManagementVSTS", "CardManagementVSTS\CardManagementVSTS.csproj", "{8595F140-D7A6-43E0-ADF0-42D773D48BED}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{8FA6113F-140D-4F5C-93B0-3757E553D103}"
+	ProjectSection(SolutionItems) = preProject
+		CardManagement.vsmdi = CardManagement.vsmdi
+		LocalTestRun.testrunconfig = LocalTestRun.testrunconfig
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 3
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://procyon:8080/
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = CardManagement\\CardManagement.csproj
+		SccProjectName1 = CardManagement
+		SccLocalPath1 = CardManagement
+		SccProjectUniqueName2 = CardManagementVSTS\\CardManagementVSTS.csproj
+		SccProjectName2 = CardManagementVSTS
+		SccLocalPath2 = CardManagementVSTS
+	EndGlobalSection
+	GlobalSection(TestCaseManagementSettings) = postSolution
+		CategoryFile = CardManagement.vsmdi
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E4CBCCAD-48EA-4916-9B6C-5CA9DE946E56}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E4CBCCAD-48EA-4916-9B6C-5CA9DE946E56}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E4CBCCAD-48EA-4916-9B6C-5CA9DE946E56}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E4CBCCAD-48EA-4916-9B6C-5CA9DE946E56}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8595F140-D7A6-43E0-ADF0-42D773D48BED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8595F140-D7A6-43E0-ADF0-42D773D48BED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8595F140-D7A6-43E0-ADF0-42D773D48BED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8595F140-D7A6-43E0-ADF0-42D773D48BED}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,39 @@
+﻿<UserControl
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:Coloretto="clr-namespace:Coloretto"
+    xmlns:Converter="clr-namespace:Coloretto.Converters"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" x:Class="Coloretto.PlayerHandCard" x:Name="ThisControl"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="d" d:DesignHeight="162.667" d:DesignWidth="113.333">
+    <UserControl.Resources>
+        <Converter:ColorettoCardColorToSolidColorBrush x:Key="ColorettoCardColor" />
+    </UserControl.Resources>
+    <UserControl.Template>
+        <ControlTemplate TargetType="{x:Type Coloretto:PlayerHandCard}">
+            <Grid Margin="3">
+                <Rectangle x:Name="rect" RadiusX="10" RadiusY="10" Fill="{TemplateBinding CardColor, Converter={StaticResource ColorettoCardColor}}" Stroke="Black" StrokeThickness="1" >
+                    <Rectangle.BitmapEffect>
+                        <DropShadowBitmapEffect x:Name="dropshadow" Color="Black" Direction="90" ShadowDepth="1" Softness="0.265"/>
+                    </Rectangle.BitmapEffect>
+                </Rectangle>
+                <Rectangle RadiusX="10" RadiusY="10" Fill="#FF000000" >
+                    <Rectangle.OpacityMask>
+                        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                            <GradientStop Color="#44FFFFFF" Offset="0"/>
+                            <GradientStop Color="#00000000" Offset="1"/>
+                            <GradientStop Color="#717C7C7C" Offset="0.51"/>
+                        </LinearGradientBrush>
+                    </Rectangle.OpacityMask>
+                </Rectangle>
+            </Grid>
+            <ControlTemplate.Triggers>
+                <Trigger Property="Coloretto:PlayerHand.IsNew" Value="true">
+                    <Setter TargetName="rect" Property="BitmapEffect">
+                        <Setter.Value>
+                            <DropShadowBitmapEffect x:Name="dropshadow" Color="Red" Direction="90" ShadowDepth="1" Softness=".75"/>    
+                        </Setter.Value>
+                    </Setter>
+                </Trigger>
+            </ControlTemplate.Triggers>
+        </ControlTemplate>
+    </UserControl.Template>
+</UserControl>

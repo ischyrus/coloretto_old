@@ -1,0 +1,14 @@
+﻿<Window x:Class="Coloretto.TestWindows.PlayerWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:Coloretto="clr-namespace:Coloretto"
+    xmlns:Lib="clr-namespace:Coloretto.Player;assembly=Coloretto.Library"
+    Title="PlayerWindow" Height="400" Width="350">
+    <Grid>
+        <Coloretto:PlayerPanel x:Name="PP">
+            <!--<Coloretto:PlayerPanel.PlayerProfile>
+                <Lib:Profile Username="Chaodaimos" Color="Red" />
+            </Coloretto:PlayerPanel.PlayerProfile>-->
+        </Coloretto:PlayerPanel>
+    </Grid>
+</Window>

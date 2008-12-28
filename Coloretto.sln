@@ -1,0 +1,125 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Coloretto", "Coloretto\Coloretto.csproj", "{D7619630-8F85-4B8B-8C2C-714758AACC1D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ColorettoServerLibrary_VSTS", "ColorettoServerLibrary_VSTS\ColorettoServerLibrary_VSTS.csproj", "{36524F46-E3B9-432D-B68B-F8FD8F40AA02}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{5B8D3EDE-4DF2-44A0-9FB5-77E6A65B21DC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestClientApp", "TestClientApp\TestClientApp.csproj", "{496398F2-CC7F-4B8E-9965-77A0FC8F62F0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CardManagement", "CardManagement\CardManagement.csproj", "{E4CBCCAD-48EA-4916-9B6C-5CA9DE946E56}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CardManagementVSTS", "CardManagementVSTS\CardManagementVSTS.csproj", "{8595F140-D7A6-43E0-ADF0-42D773D48BED}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ColorettoLib", "ColorettoLib\ColorettoLib.csproj", "{3793F9C5-6182-41B1-B717-4A121DD5BCD6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ColorettoLib_VSTS", "ColorettoLib_VSTS\ColorettoLib_VSTS.csproj", "{5CD5265D-0E12-4EB3-B141-E70AE364832C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ColorettoServerLibrary", "ColorettoServerLibrary\ColorettoServerLibrary.csproj", "{06A69B3F-9082-4830-8E3E-ABC6B5CB9B97}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestServiceApp", "TestServiceApp\TestServiceApp.csproj", "{99D7421C-5527-4D98-8694-0070B8F1E8D9}"
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "Website", "Website", "{D9EACB14-376A-4729-B5A7-486AF4FCD3DA}"
+	ProjectSection(WebsiteProperties) = preProject
+		SccProjectName = "Perforce Project"
+		SccAuxPath = ""
+		SccLocalPath = "."
+		SccProvider = "MSSCCI:Perforce SCM"
+		TargetFramework = "3.5"
+		ProjectReferences = "{E4CBCCAD-48EA-4916-9B6C-5CA9DE946E56}|CardManagement.dll;{3793F9C5-6182-41B1-B717-4A121DD5BCD6}|Coloretto.Library.dll;{06A69B3F-9082-4830-8E3E-ABC6B5CB9B97}|Coloretto.Services.dll;"
+		Debug.AspNetCompiler.VirtualPath = "/Website"
+		Debug.AspNetCompiler.PhysicalPath = "Website\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\Website\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/Website"
+		Release.AspNetCompiler.PhysicalPath = "Website\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\Website\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "56469"
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SourceCodeControl) = preSolution
+		SccNumberOfProjects = 11
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = Coloretto\\Coloretto.csproj
+		SccLocalPath1 = Coloretto
+		SccProjectUniqueName2 = ColorettoServerLibrary_VSTS\\ColorettoServerLibrary_VSTS.csproj
+		SccLocalPath2 = ColorettoServerLibrary_VSTS
+		SccProjectUniqueName3 = TestClientApp\\TestClientApp.csproj
+		SccLocalPath3 = TestClientApp
+		SccProjectUniqueName4 = CardManagement\\CardManagement.csproj
+		SccLocalPath4 = CardManagement
+		SccProjectUniqueName5 = CardManagementVSTS\\CardManagementVSTS.csproj
+		SccLocalPath5 = CardManagementVSTS
+		SccProjectUniqueName6 = ColorettoLib\\ColorettoLib.csproj
+		SccLocalPath6 = ColorettoLib
+		SccProjectUniqueName7 = ColorettoLib_VSTS\\ColorettoLib_VSTS.csproj
+		SccLocalPath7 = ColorettoLib_VSTS
+		SccProjectUniqueName8 = ColorettoServerLibrary\\ColorettoServerLibrary.csproj
+		SccLocalPath8 = ColorettoServerLibrary
+		SccProjectUniqueName9 = TestServiceApp\\TestServiceApp.csproj
+		SccLocalPath9 = TestServiceApp
+		SccWebProject10 = true
+		SccProjectUniqueName10 = Website
+		SccLocalPath10 = d:\\Procyon\\Coloretto\\Website
+		SccProjectEnlistmentChoice10 = 2
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D7619630-8F85-4B8B-8C2C-714758AACC1D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D7619630-8F85-4B8B-8C2C-714758AACC1D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D7619630-8F85-4B8B-8C2C-714758AACC1D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D7619630-8F85-4B8B-8C2C-714758AACC1D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{36524F46-E3B9-432D-B68B-F8FD8F40AA02}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{36524F46-E3B9-432D-B68B-F8FD8F40AA02}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{36524F46-E3B9-432D-B68B-F8FD8F40AA02}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{36524F46-E3B9-432D-B68B-F8FD8F40AA02}.Release|Any CPU.Build.0 = Release|Any CPU
+		{496398F2-CC7F-4B8E-9965-77A0FC8F62F0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{496398F2-CC7F-4B8E-9965-77A0FC8F62F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{496398F2-CC7F-4B8E-9965-77A0FC8F62F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{496398F2-CC7F-4B8E-9965-77A0FC8F62F0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E4CBCCAD-48EA-4916-9B6C-5CA9DE946E56}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E4CBCCAD-48EA-4916-9B6C-5CA9DE946E56}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E4CBCCAD-48EA-4916-9B6C-5CA9DE946E56}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E4CBCCAD-48EA-4916-9B6C-5CA9DE946E56}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8595F140-D7A6-43E0-ADF0-42D773D48BED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8595F140-D7A6-43E0-ADF0-42D773D48BED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8595F140-D7A6-43E0-ADF0-42D773D48BED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8595F140-D7A6-43E0-ADF0-42D773D48BED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3793F9C5-6182-41B1-B717-4A121DD5BCD6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3793F9C5-6182-41B1-B717-4A121DD5BCD6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3793F9C5-6182-41B1-B717-4A121DD5BCD6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3793F9C5-6182-41B1-B717-4A121DD5BCD6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5CD5265D-0E12-4EB3-B141-E70AE364832C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5CD5265D-0E12-4EB3-B141-E70AE364832C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5CD5265D-0E12-4EB3-B141-E70AE364832C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5CD5265D-0E12-4EB3-B141-E70AE364832C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{06A69B3F-9082-4830-8E3E-ABC6B5CB9B97}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{06A69B3F-9082-4830-8E3E-ABC6B5CB9B97}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{06A69B3F-9082-4830-8E3E-ABC6B5CB9B97}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{06A69B3F-9082-4830-8E3E-ABC6B5CB9B97}.Release|Any CPU.Build.0 = Release|Any CPU
+		{99D7421C-5527-4D98-8694-0070B8F1E8D9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{99D7421C-5527-4D98-8694-0070B8F1E8D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{99D7421C-5527-4D98-8694-0070B8F1E8D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{99D7421C-5527-4D98-8694-0070B8F1E8D9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D9EACB14-376A-4729-B5A7-486AF4FCD3DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D9EACB14-376A-4729-B5A7-486AF4FCD3DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D9EACB14-376A-4729-B5A7-486AF4FCD3DA}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{D9EACB14-376A-4729-B5A7-486AF4FCD3DA}.Release|Any CPU.Build.0 = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,36 @@
+﻿<Window x:Class="Coloretto.GameStartDialog"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:Coloretto="clr-namespace:Coloretto"
+    Title="Coloretto - Game Setup" Height="422" Width="541" WindowStartupLocation="CenterOwner" ResizeMode="NoResize" WindowStyle="ToolWindow" Background="#FF469539" >
+    <Grid>
+    	<TabControl Margin="8,68,8,85" IsSynchronizedWithCurrentItem="True">
+    		<TabItem TabIndex="5">
+                <TabItem.Header>
+                    <StackPanel Orientation="Horizontal">
+                        <Image Source="../Images/Hdd.png" Height="16" Width="16" />
+                        <TextBlock Margin="5 0 0 0">Local Game</TextBlock>
+                    </StackPanel>
+                </TabItem.Header>
+    			<StackPanel x:Name="StackPanel_Players" VerticalAlignment="Center">
+    				<Coloretto:PlayerSetup x:Name="Player1" Height="26" PlayerIndex="1" Margin="0,5,0,5" TabIndex="0" IsRequired="True"  />
+					<Coloretto:PlayerSetup x:Name="Player2" Height="26" PlayerIndex="2" Margin="0,5,0,0" TabIndex="1" IsRequired="True"  />
+					<Coloretto:PlayerSetup x:Name="Player3" Height="26" PlayerIndex="3" Margin="0,5,0,0" TabIndex="2" IsRequired="True"  />
+					<Coloretto:PlayerSetup x:Name="Player4" Height="26" PlayerIndex="4" Margin="0,5,0,0" TabIndex="3" />
+					<Coloretto:PlayerSetup x:Name="Player5" Height="26" PlayerIndex="5" Margin="0,5,0,0" TabIndex="4" />
+    			</StackPanel>
+    		</TabItem>
+    		<TabItem>
+                <TabItem.Header>
+                    <StackPanel Orientation="Horizontal">
+                        <Image Source="../Images/HddNetwork.png" Height="16" Width="16" />
+                        <TextBlock Margin="5 0 0 0">Network Game</TextBlock>
+                    </StackPanel>
+                </TabItem.Header>
+                <Grid/>
+    		</TabItem>
+    	</TabControl>
+    	<Button HorizontalAlignment="Right" Margin="0,0,31,32" VerticalAlignment="Bottom" Width="82" Height="29" Command="{x:Static Coloretto:GameStartDialog.StartGameCommand}" Content="Start Game" IsDefault="True" x:Name="Button_Start"/>
+    	<Button HorizontalAlignment="Right" Margin="0,0,133,32" x:Name="Button_Cancel" VerticalAlignment="Bottom" Width="58.877" Height="29" Content="Cancel" IsCancel="True"/>
+    </Grid>
+</Window>
