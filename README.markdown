@@ -1,4 +1,4 @@
-The two core libraries are CardManagement and ColorettoLib. 
+The two core libraries are CardManagement and ColorettoLib. To open them in MONO DEVELOP, the MONO-DEVELOP solution file is '~/CardManagement/CardManagement.mds'.
 
 CardManagement.csproj
 - The CardMangement doesn't really have much logic in it. It basically contains enough logic to create, shuffle, and handle basic operations you'd expect from a card library. The interesting file to look at (and probably the best place to start) is ~/CardMangement/Coloretto/ColorettoDeckProvider.cs.
